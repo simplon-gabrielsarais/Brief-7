@@ -30,7 +30,7 @@ steps:
   inputs:
     key: '12345'
     path: '/home/vsts/version'
-    cacheHitVar: 'cachette'
+    cacheHitVar: 'false'
 
 - task: CmdLine@2
   inputs:
