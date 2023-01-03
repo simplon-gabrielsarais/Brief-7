@@ -23,4 +23,4 @@ steps:
     kubernetesServiceEndpoint: 'Brief-7-GS-brief7-gs'
     namespace: 'brief7-gs'
     command: 'top'
-    arguments: 'node'
+    arguments: 'pod'
