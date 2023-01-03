@@ -28,4 +28,8 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      curl ''https://hub.docker.com/v2/repositories/simplonasa/azure_voting_app/tags'' | jq '."results"[0]["name"]'
+      curl ''https://hub.docker.com/v2/repositories/simplonasa/azure_voting_app/tags'' | jq '."results"[0]["name"]'>/version.vote
+
+- task: Cache@2
+  inputs:
+    path: '/'
