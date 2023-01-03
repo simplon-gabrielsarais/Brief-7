@@ -18,11 +18,9 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-
-- task: Kubernetes@1
   inputs:
     connectionType: 'Kubernetes Service Connection'
-    kubernetesServiceEndpoint: 'Brief-7-GS-brief7-gs'
+    kubernetesServiceEndpoint: 'kuber-brief7-gs'
     namespace: 'brief7-gs'
     command: 'top'
     arguments: 'pod'
