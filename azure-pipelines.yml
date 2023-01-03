@@ -25,6 +25,12 @@ steps:
     command: 'top'
     arguments: 'pod'
 
+- task: Cache@2
+  inputs:
+    key: '12345'
+    path: '/home/vsts/version'
+    cacheHitVar: 'cachette'
+
 - task: CmdLine@2
   inputs:
     script: |
