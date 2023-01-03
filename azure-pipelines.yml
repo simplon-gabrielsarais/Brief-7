@@ -51,7 +51,7 @@ steps:
     connection: 'github.com_simplon-gabrielsarais'
     userRepository: 'simplon-gabrielsarais/Brief-7'
     defaultVersionType: 'latest'
-    itemPattern: '/kube_brief6/*.yml'
+    itemPattern: '**'
     downloadPath: '/home/vsts/git'
 
 - task: CmdLine@2
