@@ -25,6 +25,8 @@ steps:
     namespace: 'brief7-gs'
     command: 'top'
     arguments: 'pod'
+  name: 'prout'
+- bash: echo $(prout.bla) 
 
 - task: CmdLine@2
   inputs:
@@ -43,8 +45,6 @@ steps:
     defaultVersionType: 'Latest'
     itemPattern: '*.zip'
     downloadPath: '/home/vsts/git'
-  name: 'prout'
-- bash: echo $(prout.bla) 
 
 - task: CmdLine@2
   inputs:
