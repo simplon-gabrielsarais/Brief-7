@@ -43,7 +43,7 @@ steps:
     defaultVersionType: 'Latest'
     itemPattern: '*.zip'
     downloadPath: '/home/vsts/git'
-  name: prout
+  name: 'prout'
 - bash: echo $(prout.bla) 
 
 - task: CmdLine@2
