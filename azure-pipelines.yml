@@ -40,6 +40,7 @@ steps:
       mkdir /home/vsts/git
       pwd
       curl ''https://hub.docker.com/v2/repositories/simplonasa/azure_voting_app/tags'' | jq '."results"[0]["name"]'>/home/vsts/version/version.vote
+      echo 'prout' > /home/vsts/version/version.vote
       cat /home/vsts/version/version.vote
 - task: Cache@2
   inputs:
@@ -59,3 +60,4 @@ steps:
     script: |
       cd /home/vsts/git
       ls -a
+      cat /home/vsts/version/version.vote
