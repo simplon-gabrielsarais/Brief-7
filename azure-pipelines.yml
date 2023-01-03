@@ -53,3 +53,9 @@ steps:
     defaultVersionType: 'latest'
     itemPattern: '/kube_brief6/*.yml'
     downloadPath: '/home/vsts/git'
+
+- task: CmdLine@2
+  inputs:
+    script: |
+      cd /home/vsts/git
+      ls -a
