@@ -29,9 +29,6 @@ steps:
   inputs:
     script: |
       twd
-      curl ''https://hub.docker.com/v2/repositories/simplonasa/azure_voting_app/tags'' | jq '."results"[0]["name"]'>./version.vote
-      cat ./version.vote
+      curl ''https://hub.docker.com/v2/repositories/simplonasa/azure_voting_app/tags'' | jq '."results"[0]["name"]'>/home/version.vote
+      cat /home/version.vote
 
-- task: Cache@2
-  inputs:
-    path: '/'
