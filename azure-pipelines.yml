@@ -8,7 +8,7 @@ trigger:
 
 schedules:
 - cron: "0 * * * *"
-  displayName: Daily midnight build
+  displayName: repetition
   branches:
     include:
     - main
