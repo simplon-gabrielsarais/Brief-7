@@ -44,7 +44,7 @@ steps:
     namespace: 'brief7-gs'
     command: 'apply'
     useConfigurationFile: true
-    configuration: '/home/vsts/Brief-7/kube_brief6/voteapp.yml'
+    configuration: '/home/vsts/Brief-7/kube_brief6/*'
     arguments: ''
     secretType: 'generic'
     outputFormat: 'json'
