@@ -25,7 +25,7 @@ steps:
     namespace: 'brief7-gs'
     command: 'get'
     arguments: 'deployments'
-    outputFormat: 'yaml'
+    outputFormat: 'json'
   name: "kube"
 - task: CmdLine@2
   inputs:
