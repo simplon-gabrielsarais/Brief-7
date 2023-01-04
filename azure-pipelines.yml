@@ -44,7 +44,7 @@ steps:
     namespace: 'brief7-gs'
     command: 'apply'
     useConfigurationFile: true
-    configuration: '/Brief-7/kube_brief6'
+    configuration: '/home/vsts/Brief-7/kube_brief6/*'
     arguments: '-f'
     secretType: 'generic'
 
