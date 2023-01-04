@@ -27,6 +27,8 @@ steps:
     arguments: 'deployments'
     outputFormat: 'json'
   name: "kube"
+- powershell: |
+    Write-Host $(kube.KubectlOutput)
 - task: CmdLine@2
   inputs:
     script: |
