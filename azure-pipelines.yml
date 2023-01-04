@@ -31,6 +31,7 @@ steps:
   inputs:
     script: |
       versionnew=$((curl 'https://hub.docker.com/v2/repositories/simplonasa/azure_voting_app/tags' | jq '."results"[0]["name"]')| sed 's/^.//;s/.$//')
+      echo $versionnew
       echo '##vso[task.setvariable variable=vernew;]$versionnew'
 
 - task: CmdLine@2
