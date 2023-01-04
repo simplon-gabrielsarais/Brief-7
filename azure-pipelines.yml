@@ -37,7 +37,7 @@ steps:
       cd /home/vsts
       git clone https://github.com/simplon-gabrielsarais/Brief-7.git
       cd Brief-7/kube_brief6/
-      if [$verold -ne $vernew]
+      if [$verold != $vernew]
       then 
         sed -i 's/{{ version }}/$versionnew/g' voteapp.yml
 
