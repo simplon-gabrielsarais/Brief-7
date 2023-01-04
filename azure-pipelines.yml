@@ -49,4 +49,4 @@ steps:
       ls -a
       cat /home/vsts/version/version.vote
       echo $(test)
-      echo ($kube.KubectlOutput)
+      cat $(kube.KubectlOutput)
