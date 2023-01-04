@@ -41,6 +41,10 @@ steps:
       cd Brief-7
       ls
   name: 'bashoter'
+
+- bash: |
+    echo $BASHOTER_VERNEW
+    echo $BASHOTER_VEROLD
 - task: Kubernetes@1
   condition: eq(variables['bashoter.verold'],variables['bashoter.vernew'])
   inputs:
