@@ -26,8 +26,6 @@ steps:
     command: 'top'
     arguments: 'pod'
   name: "kube"
-- bash: |
-    echo $(kube.pest)
 
 - task: CmdLine@2
   inputs:
@@ -58,5 +56,5 @@ steps:
       ls -a
       cat /home/vsts/version/version.vote
       echo $(test)
-      echo $(kube.pest)
+      echo $(kube.KubectlOutput)
 
