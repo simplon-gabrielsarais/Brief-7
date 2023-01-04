@@ -35,6 +35,7 @@ steps:
       echo "##vso[task.setvariable variable=vernew;]$versionnew"
       cd /home/vsts
       git clone https://github.com/simplon-gabrielsarais/Brief-7.git
+      cd Brief-7
       ls
 
 - task: CmdLine@2
