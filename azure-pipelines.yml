@@ -43,10 +43,11 @@ steps:
   name: 'bashoter'
 
 - bash: |
-    echo $BASHOTER_VERNEW
-    echo $BASHOTER_VEROLD
+    echo $(vernew)
+    echo $(verold)
+
 - task: Kubernetes@1
-  condition: ne(variables['bashoter.verold'],variables['bashoter.vernew'])
+  condition: ne(variables['verold'],variables['vernew'])
   inputs:
     connectionType: 'Kubernetes Service Connection'
     kubernetesServiceEndpoint: 'kuber-brief7-gs'
