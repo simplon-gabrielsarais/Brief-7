@@ -47,6 +47,7 @@ steps:
     configuration: '/home/vsts/Brief-7/kube_brief6/voteapp.yml'
     arguments: '-f'
     secretType: 'generic'
+    outputFormat: 'none'
 
 - task: CmdLine@2
   inputs:
