@@ -30,9 +30,9 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      VERSIONNEW=$(curl 'https://hub.docker.com/v2/repositories/simplonasa/azure_voting_app/tags' | jq '."results"[0]["name"]')
-      $VERSIONNEW=$($VERSIONNEW | sed 's/^.//;s/.$//')
-      echo ##vso[task.setvariable variable=vernew;]$VERSIONNEW
+      versionnew=$(curl 'https://hub.docker.com/v2/repositories/simplonasa/azure_voting_app/tags' | jq '."results"[0]["name"]')
+      versionnew=$(echo $versionnew | sed 's/^.//;s/.$//')
+      echo ##vso[task.setvariable variable=vernew;]$versionnew
 
 - task: CmdLine@2
   inputs:
