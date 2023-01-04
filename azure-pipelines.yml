@@ -6,6 +6,10 @@
 trigger:
 - main
 
+schedules:
+- cron: "0 0,1,12,18 * * *"
+  displayName: Daily midnight build
+
 pool:
   vmImage: ubuntu-latest
 
