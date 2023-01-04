@@ -23,10 +23,9 @@ steps:
     connectionType: 'Kubernetes Service Connection'
     kubernetesServiceEndpoint: 'kuber-brief7-gs'
     namespace: 'brief7-gs'
-    command: 'top'
-    arguments: 'pod'
+    command: 'get'
+    arguments: 'deployments'
   name: "kube"
-
 - task: CmdLine@2
   inputs:
     script: |
