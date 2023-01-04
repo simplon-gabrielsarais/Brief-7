@@ -34,8 +34,8 @@ steps:
       versionold=$(echo $KUBE_KUBECTLOUTPUT | jq '.items[].spec.template.spec.containers[].image' | cut -d: -f2 | sed 's/"//')
       echo $versionnew
       echo $versionold
-      echo "##vso[task.setvariable variable=vernew;]$versionnew"
-      echo "##vso[task.setvariable variable=verold;]$versionold"
+      echo "##vso[task.setvariable variable=vernew]$versionnew"
+      echo "##vso[task.setvariable variable=verold]$versionold"
       cd /home/vsts
       git clone https://github.com/simplon-gabrielsarais/Brief-7.git
       cd Brief-7
@@ -46,7 +46,7 @@ steps:
     echo $BASHOTER_VERNEW
     echo $BASHOTER_VEROLD
 - task: Kubernetes@1
-  condition: eq(variables['bashoter.verold'],variables['bashoter.vernew'])
+  condition: ne(variables['bashoter.verold'],variables['bashoter.vernew'])
   inputs:
     connectionType: 'Kubernetes Service Connection'
     kubernetesServiceEndpoint: 'kuber-brief7-gs'
