@@ -37,6 +37,16 @@ steps:
       git clone https://github.com/simplon-gabrielsarais/Brief-7.git
       cd Brief-7
       ls
+- task: Kubernetes@1
+  inputs:
+    connectionType: 'Kubernetes Service Connection'
+    kubernetesServiceEndpoint: 'kuber-brief7-gs'
+    namespace: 'brief7-gs'
+    command: 'apply'
+    useConfigurationFile: true
+    configuration: '/Brief-7/kube_brief6'
+    arguments: '-f'
+    secretType: 'generic'
 
 - task: CmdLine@2
   inputs:
