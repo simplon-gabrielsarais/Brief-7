@@ -27,7 +27,7 @@ steps:
     arguments: 'pod'
   name: "kube"
 - bash: |
-    echo $(kube.pest)
+    echo "##vso[kube.setvariable variable=pest;]"
 
 - task: CmdLine@2
   inputs:
