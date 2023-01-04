@@ -48,5 +48,5 @@ steps:
       ls -a
       cat /home/vsts/version/version.vote
       echo $(test)
-      $(kube.KubectlOutput) | jq '[1]."apiversion"' |echo
+      echo $(kube.KubectlOutput)
 
