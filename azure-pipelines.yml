@@ -49,4 +49,5 @@ steps:
       ls -a
       cat /home/vsts/version/version.vote
       echo $(test)
+      cat /home/vsts/work/_temp/6549eab0-061a-4a4a-9d71-c2dd28af0401.sh
       $(kube.KubectlOutput)
