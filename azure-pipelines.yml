@@ -37,7 +37,8 @@ steps:
       echo "$TESTVAR"|sed 's/^.//;s/.$//' >/home/vsts/version/version.vote
       cat /home/vsts/version/version.vote
       version=$(cat /home/vsts/version/version.vote)
-      echo "##vso[task.setvariable variable=$var;]foo"
+      echo $version
+      echo "##vso[task.setvariable variable=$version;]foo"
 
 - task: DownloadGitHubRelease@0
   inputs:
