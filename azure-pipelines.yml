@@ -38,7 +38,7 @@ steps:
       cat /home/vsts/version/version.vote
       version=$(cat /home/vsts/version/version.vote)
       echo $version
-      echo "##vso[task.setvariable variable=$version;]foo"
+      echo "##vso[task.setvariable variable=$test;]cat /home/vsts/version/version.vote"
   name: "task"
 - task: DownloadGitHubRelease@0
   inputs:
@@ -54,5 +54,5 @@ steps:
       cd /home/vsts/git
       ls -a
       cat /home/vsts/version/version.vote
-      echo $(task.setvariable)
+      echo $(test)
 
