@@ -38,11 +38,10 @@ steps:
       git clone https://github.com/simplon-gabrielsarais/Brief-7.git
       cd Brief-7/kube_brief6/
       sed -i 's/{{ version }}/'$versionnew'/g' voteapp.yml
+      echo $versionnew
+      echo $versionold
   name: 'bashoter'
 
-- bash: |
-    echo $(verold)
-    echo $(vernew)
 - task: Kubernetes@1
   condition: ne(variables['verold'],variables['vernew'])
   inputs:
