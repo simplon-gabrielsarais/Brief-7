@@ -42,7 +42,7 @@ steps:
   name: 'bashoter'
 
 - task: Kubernetes@1
-  condition: eq(variables['verold'],variables['vernew'])
+  condition: ne(variables['verold'],variables['vernew'])
   inputs:
     connectionType: 'Kubernetes Service Connection'
     kubernetesServiceEndpoint: 'kuber-brief7-gs'
