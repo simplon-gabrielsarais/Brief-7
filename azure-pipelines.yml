@@ -41,7 +41,6 @@ steps:
       sed -i 's/{{ version }}/'$versionnew'/g' voteapp.yml
       echo $versionnew
       echo $versionold
-  name: 'bashoter'
 
 - task: Kubernetes@1
   condition: ne(variables['verold'],variables['vernew'])
