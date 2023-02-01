@@ -74,12 +74,6 @@ Déploiment depuis microsoft PipeLine. toutes les heure un job est éxécuté, i
 
 ---
 
-## test de charge
-Horizontal pod autoscaler
-permet en réponse à une monté en charge des pods présents d'en déployer jusqu'à 8.
-
----
-
 ## explication k8s
 
 - open-source
