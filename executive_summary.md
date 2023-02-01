@@ -1,20 +1,5 @@
----
-title: Brief 6 executive summary
-description: View the slide with "Slide Mode".
-slideOptions:
-  theme: black
-  transition: 'concave'
-  backgroundTransition: 'convex'
-  transitionSpeed: 'default'
-  parallaxBackgroundImage: 'https://i.imgur.com/yGbBtub.jpg'
-  parallaxBackgroundHorizontal: 500
-  parallaxBackgroundVertical: 500
----
-  <!-- .slide: data-background="https://cncf-branding.netlify.app/img/projects/kubernetes/stacked/black/kubernetes-stacked-black.png" data-background-size="1500px" -->
+
 # Brief 6: executive summary
-[github du brief](https://github.com/simplon-gabrielsarais/brief_6)
-[résultat](https://rajaxpression.distributeur-de-pain.best/)
-[présentation](https://hackmd.io/p/eYNLlBf6R9iAoI-p6g2iYA)
 
 ---
 
