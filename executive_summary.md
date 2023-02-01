@@ -1,7 +1,7 @@
 
 # Brief 7: executive summary
 
-![](https://i.imgur.com/4NdFZsi.png)
+![](https://i.imgur.com/9rFM7io.png)
 
 ---
 
