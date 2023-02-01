@@ -1,5 +1,5 @@
 
-# Brief 6: executive summary
+# Brief 7: executive summary
 
 ![](https://i.imgur.com/4NdFZsi.png)
 
@@ -22,8 +22,8 @@
 ## installation de kubctl
 
 - sudo `apt-get install -y kubect`
-- création d'un groupe de ressource azure (dans mon cas "gabriel_brief6")
-- création d'un cluster aks (dans mon cas "kuber") `az aks create -g gabriel_brief6 -n kuber --ssh-key-value /chemin/de/la/clé --node-count 4 --enable-managed-identity -a ingress-appgw --appgw-name myApplicationGateway --appgw-subnet-cidr "10.225.0.0/16"`
+- création d'un groupe de ressource azure
+- création d'un cluster aks `az aks create -g Brief-7-GS -n kuber --ssh-key-value /chemin/de/la/clé --node-count 2 --enable-managed-identity -a ingress-appgw --appgw-name myApplicationGateway --appgw-subnet-cidr "10.225.0.0/16"`
 - connexion de kubectl et aks `az aks get-credentials --resource-group gabriel_brief6 --name kuber`
 </section>
 
@@ -70,7 +70,7 @@ cercificat -> K8s secrets -> ingress
 
 ## déploiement du cluster
 
-- `kubectl apply -f chemin/du/dossier`
+Déploiment depuis microsoft PipeLine. toutes les heure un job est éxécuté, il vérifie si une nouvelle mise à jours a été publié sur docker hub et si c'est le cas, le manifest kubernetes est redéployé.
 
 ---
 
