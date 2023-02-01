@@ -1,6 +1,8 @@
 
 # Brief 6: executive summary
 
+![](https://i.imgur.com/4NdFZsi.png)
+
 ---
 
 ## Objectifs
