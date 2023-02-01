@@ -57,9 +57,6 @@ cercificat -> K8s secrets -> ingress
 - redis
     - deployment redis
     - clusterIP redis
-
-----
-
 - ingress
     - ingress azure application gateway
 - voting app
@@ -89,9 +86,3 @@ permet en réponse à une monté en charge des pods présents d'en déployer jus
 - gestion d'applications à grandes échelles
 - déploiement de pods et de services sur des nodes
 - yaml/Json -> contrôleur -> nodes
-
----
-
-<!-- .slide: data-background="https://cncf-branding.netlify.app/img/projects/kubernetes/stacked/black/kubernetes-stacked-black.png" data-background-size="1500px" -->
-
-### avez-vous des questions?
