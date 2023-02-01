@@ -1,7 +1,7 @@
-# DAT Brief 6
+# DAT Brief 7
 ## architechture
 
-![](https://i.imgur.com/4NdFZsi.png)
+![](https://i.imgur.com/9rFM7io.png)
 
 ```mermaid
 flowchart LR
