@@ -104,5 +104,6 @@ end
      - blob storage: 1Go
      - 10 000 writing operation
      - 10 000 read operation
+ 
 Total €69.53
     
