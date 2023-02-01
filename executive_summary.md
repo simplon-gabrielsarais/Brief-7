@@ -70,7 +70,7 @@ cercificat -> K8s secrets -> ingress
 
 ## déploiement du cluster
 
-Déploiment depuis microsoft PipeLine. toutes les heure un job est éxécuté, il vérifie si une nouvelle mise à jours a été publié sur docker hub et si c'est le cas, le manifest kubernetes est redéployé.
+Déploiement depuis microsoft PipeLine. toutes les heure un job est éxécuté, il vérifie si une nouvelle mise à jours a été publié sur docker hub et si c'est le cas, le manifest kubernetes est redéployé.
 
 ---
 
