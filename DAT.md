@@ -96,7 +96,8 @@ end
         - doit être utilisé en entreprise
  
  ## Cost forcast
-  - 1 AKS...........................Pay as you go: €69.46
+  - 1 AKS...........................Pay as you go: €136.80
+      - 1 cluster pour la SLA 
       - 1 nodepool
           - 2 node: Standard B2s
       - 1 SSD premium: 32 Gb
